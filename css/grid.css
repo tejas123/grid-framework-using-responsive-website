@@ -1,0 +1,103 @@
+/*!
+Grid.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) © 2012-2015 The App Guruz. 
+*/
+
+body { margin: 0; padding: 0; border: 0; }
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,address,img,strong,sub,sup,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,tbody,thead,tr,th,td,
+article,footer,header,menu,nav,section,time,audio, video { font-size:100%; vertical-align:baseline; background:transparent;	outline:0;}
+
+article,footer,header,menu,nav,section{display:block;}
+
+img{max-width: 100%;height: auto;}
+
+a{ font-size:100%; vertical-align:baseline; text-decoration:none;}
+
+a:hover{ color:#7A59D8;}
+
+input, select{vertical-align:middle;}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+/*Grid-Framework */
+
+.container{margin:0 auto; width:80%;}
+
+.container-fluid { margin:0 auto; width:100%;}
+
+.row-content:before,.row-content:after{ display:table; line-height:0; content:"";}
+
+.row-content:after{ clear: both;}
+
+[class*="col"] { float: left; min-height: 1px; }
+
+.box{ padding: 20px; }
+
+.box-margin{ margin: 0 10px 0 10px;}
+
+.col-1,.col-offset-1{ width: 6.25%; }
+
+.col-2,.col-offset-2{ width: 12.25%; } 
+
+.col-3,.col-offset-3{ width: 18.25%; } 
+
+.col-4,.col-offset-4{ width: 24.25%; } 
+
+.col-5,.col-offset-5{ width: 30.25%; }
+
+.col-6,.col-offset-6{ width: 36.25%; }
+
+.col-7,.col-offset-7{ width: 42.25%; }
+
+.col-8,.col-offset-8{ width: 48.25%; }
+
+.col-9,.col-offset-9{ width: 54.25%; }
+
+.col-10,.col-offset-10{ width: 60.25%; }
+
+.col-11,.col-offset-11{ width: 66.25%; }
+
+.col-12,.col-offset-12{ width: 72.25%; }
+
+.col-13,.col-offset-13{ width:78.25%; }
+
+.col-14,.col-offset-14{ width:84.25%; }
+ 
+.col-15,.col-offset-15{ width:90.25%; }
+
+.col-16,.col-offset-16{ width:96.25%; }
+
+
+
+@media only screen and (max-width : 768px) and (min-width : 480px) 
+{
+
+.container{ width: 96%; }
+
+[class*="col"] { width: 50%; }
+
+.col-6 { width: 33.3333333333%; }
+
+.col-16 { width:100%; }
+
+.col-offset-1, .col-offset-2, .col-offset-3, .col-offset-4, .col-offset-5, .col-offset-6, .col-offset-7, .col-offset-8, .col-offset-9, .col-offset-10, .col-offset-11, .col-offset-12, .col-offset-13, .col-offset-14, .col-offset-15, .col-offset-16 { width: 0% !important; display: none; }
+
+.box-margin { margin: 0 10px 0 10px; }
+
+}
+
+@media only screen and (max-width : 479px)
+{
+
+.container { width: 96%; }
+
+[class*="col"] { float: none; width: 100%; }
+
+.col-offset-1, .col-offset-2, .col-offset-3, .col-offset-4, .col-offset-5, .col-offset-6, .col-offset-7, .col-offset-8,.col-offset-9, .col-offset-10, .col-offset-11, .col-offset-12, .col-offset-13, .col-offset-14, .col-offset-15, .col-offset-16 { width: 0% !important; display: none; }
+
+.box-margin{ margin: 0 10px 0 10px; }
+
+}
